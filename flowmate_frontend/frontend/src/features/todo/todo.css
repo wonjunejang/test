@@ -1,0 +1,347 @@
+/* 공통 - 필수 빨간 별표 */
+.required-mark {
+  color: red;
+}
+
+/* 공통 - textarea resize 세로만 허용 */
+.todo-textarea {
+  resize: vertical;
+}
+
+/* 공통 - 아이콘 크기 통일 */
+.todo-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+
+/* ─── TodoFilter label ─── */
+@media (max-width: 768px) {
+  .todo-label {
+    width: 40px;
+    text-align: center;
+  }
+}
+
+/* ─── TodoAddModal / TodoEditModal ─── */
+.todo-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.todo-modal-box {
+  width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* ─── TodoList - 상태 뱃지 ─── */
+.todo-status-badge {
+  padding: 1px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* ─── TodoList - 반응형 테이블/카드 전환 ─── */
+.todo-table-wrap {
+  display: block;
+}
+
+.todo-card-wrap {
+  display: none;
+}
+
+/* ─── TodoList - 모바일 카드 ─── */
+.todo-card-item {
+  border: 1px solid #8c8c8c;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: filter 0.15s;
+}
+
+.todo-card-item:hover {
+  filter: brightness(0.95);
+}
+
+.todo-card-title {
+  font-weight: 600;
+  font-size: 13px;
+  color: #222;
+}
+
+/* ─── TodoList - 페이징 ─── */
+.pagination-wrap {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.pagination-btn {
+  padding: 3px 10px;
+  border: none;
+  border-right: 1px solid #ccc;
+  background: #fff;
+  color: #666;
+  font-weight: 400;
+}
+
+.pagination-btn-active {
+  background-color: #E8E8E8;
+  color: #000;
+  font-weight: 700;
+}
+
+.pagination-btn:last-child {
+  border-right: none;
+}
+
+/* ─── TodoSection - 캘린더 반응형 ─── */
+.calendar-wrap {
+  display: block;
+}
+
+/* ─── TodoDetail - 레이아웃 ─── */
+.todo-title {
+  margin-bottom: 20px !important;
+}
+
+.todo-left {
+  flex: 7;
+  min-width: 0;
+}
+
+.todo-right {
+  flex: 3;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  height: fit-content;
+}
+
+/* ─── TodoDetail - 수정/삭제 버튼 ─── */
+.btn-action {
+  display: flex;
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  gap: 5px;
+  align-items: center;
+}
+
+/* ─── TodoDetail - 첨부파일 행 ─── */
+.file-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.file-btn {
+  padding: 4px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ─── TodoListModal ─── */
+.todo-list-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.todo-list-modal-box {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  width: 480px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.todo-list-modal-close-btn {
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.todo-list-modal-scroll {
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 360px;
+}
+
+.todo-list-modal-item:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.todo-list-modal-item:hover {
+  background: #f5f5f5;
+}
+
+.todo-list-modal-title {
+  font-size: 13px;
+  color: #333;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.todo-list-modal-assignee {
+  font-size: 11px;
+  color: #aaa;
+  flex-shrink: 0;
+}
+
+/* ─── TodoProgress - 통계 칩 ─── */
+.progress-chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 99px;
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+.progress-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* ─── TodoProgress - 진행률 바 ─── */
+.progress-bar-wrap {
+  flex: 1;
+  background: #D9D9D9;
+  border-radius: 8px;
+  height: 25px;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.progress-bar-fill {
+  background: #969696;
+  border-radius: 8px;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* ─── TodoCalendar - 그리드 ─── */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+/* ─── CalendarCell ─── */
+.calendar-cell {
+  border-radius: 6px;
+  padding: 5px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.calendar-cell-date {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.calendar-todo-badge {
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 1px 4px;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.calendar-more-btn {
+  font-size: 10px;
+  color: #4a90d9;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+}
+
+/* ─── TodoFilter ─── */
+.todo-filter-input {
+  min-width: 120px;
+}
+
+.todo-filter-search {
+  min-width: 200px;
+}
+
+/* ─── 반응형 (max-width: 768px) ─── */
+@media (max-width: 768px) {
+
+  /* TodoList */
+  .todo-table-wrap {
+    display: none;
+  }
+
+  .todo-card-wrap {
+    display: block;
+  }
+
+  /* TodoCSection 캘린더 */
+  .calendar-wrap {
+    display: none;
+  }
+
+  /* TodoDetail */
+  .todo-body {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .todo-left,
+  .todo-right {
+    width: 100%;
+  }
+
+  .btn-action {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+
+  /* TodoFilter */
+  .todo-filter-input,
+  .todo-filter-search {
+    flex: 1;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+}

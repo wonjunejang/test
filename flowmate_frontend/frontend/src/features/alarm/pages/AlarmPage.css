@@ -1,0 +1,141 @@
+.alarm-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+.alarm-page-label {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.alarm-modal {
+  width: 480px;
+  background: #fff;
+  border: 1px solid #D9D9D9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.alarm-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.alarm-modal-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.alarm-modal-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.alarm-btn {
+  padding: 5px 12px;
+  font-size: 12px;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.alarm-btn:hover {
+  background: #f0f0f0;
+}
+
+.alarm-btn-delete {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.alarm-btn-delete:hover {
+  background: #fff1f0;
+}
+
+.alarm-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.alarm-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 20px;
+  border-bottom: 1px solid #D9D9D9;
+  cursor: pointer;
+  gap: 12px;
+}
+
+.alarm-item:last-child {
+  border-bottom: none;
+}
+
+.alarm-item.unread {
+  background-color: #EDFCFF;
+}
+
+.alarm-item.read {
+  background-color: #ffffff;
+}
+
+.alarm-item-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.alarm-item-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+
+.alarm-item-desc {
+  font-size: 13px;
+  color: #000;
+}
+
+.alarm-item-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.alarm-item-time {
+  font-size: 12px;
+  color: #999;
+  white-space: nowrap;
+}
+
+.alarm-item-close {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.alarm-item-close:hover {
+  color: #000;
+}
+
+.alarm-empty {
+  padding: 40px;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}

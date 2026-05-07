@@ -1,0 +1,9 @@
+.direct-btn{
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: none;
+    background: url(../../assets/arrow-right.png) no-repeat 50%;
+    background-size: 50%;
+    align-items: center;
+}

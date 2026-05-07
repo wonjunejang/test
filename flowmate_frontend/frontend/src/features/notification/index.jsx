@@ -1,0 +1,1 @@
+export { default as NotificationList } from "./pages/NotificationList";

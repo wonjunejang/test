@@ -1,0 +1,144 @@
+/* 페이지 제목 */
+/* 영역 */
+/* .container{
+    max-width: 800px;
+} */
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+h2{
+    font-size: 1.5rem;
+    margin-bottom: .4rem;
+}
+
+/* 상단 버튼과 제목 정렬 */
+/* .container-header{
+    position: relative;
+    margin-bottom: 80px;
+} */
+.back-btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    background: url(../../assets/back-arrow.png) no-repeat 50%;
+    background-size: 60%;
+    justify-content: center;
+}
+.list-btn{
+    font-weight: bold;
+    position: absolute;
+    padding: 5px 10px;
+    border: 1px solid #555555;
+    color: #555555;
+    border-radius: 5px;
+    background: #ffffff;
+    font-size: .8rem;
+    right: 0;
+    bottom: 0;
+}
+.list-btn:hover{
+    transition: .3s;
+    background: #eeeeee;
+}
+
+/* 작성일, 읽음상태 정렬 */
+.date-status{
+    display: flex;
+    gap: 20px;
+}
+.date-status div{
+    position: relative;
+}
+.date-status div:not(:last-child)::after{
+    position: absolute;
+    content: "";
+    top: 1px;
+    right: -10px;
+    background: #cccccc;
+    width: 1px;
+    height: 14px;
+}
+
+/* 표 */
+table{
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: background-color 0.15s ease;
+}
+table th{
+    font-size: 15px;
+    background: #dddddd;
+}
+th, td {
+    border-bottom: 1px solid #ccc;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+
+table th,table td{
+    padding: 10px;
+}
+.num, th.tit, .date, .read{
+    text-align: center;
+}
+td.num{
+    color: #888888;
+}
+.user-list td.tit{
+    /* display: flex; */
+    /* gap: .8rem; */
+    text-align: left;
+}
+.date {
+    white-space: nowrap;
+}
+.badge {
+    display: inline !important;
+}
+.discussion-table tbody tr:hover {
+    background-color: #f0f4ff;
+}
+
+/* 상태 */
+.status-read{
+    font-size: .8rem;
+    color: #ffffff;
+    padding: 3px 5px;
+    border-radius: 5px;
+    background: #198754;
+    font-weight: 700;
+}
+.status-yet{
+    font-size: .8rem;
+    color: #888888;
+    padding: 3px 5px;
+    border-radius: 5px;
+    background: #dddddd;
+    font-weight: 700;
+}
+.status-new{
+    font-size: .7rem;
+    color: #ffffff;
+    padding: 3px 5px;
+    border-radius: 50px;
+    background: #dc3545;
+}
+
+
+/* 페이징쿼리 페이지 이동 버튼 */
+.page-btn{
+    margin-top: 2rem;
+}
+.page-prev-btn, .page-next-btn{
+    border-radius: 5px;
+    padding: 5px 8px;
+}
